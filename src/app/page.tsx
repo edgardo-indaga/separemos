@@ -20,7 +20,7 @@ export default function Home() {
 
     return (
         <>
-            <section className="h-[100vh]" id="inicio">
+            <section className="h-[800px] xl:h-[100vh]" id="inicio">
                 <Image
                     alt="Background Inicio"
                     src={bgInicio}
