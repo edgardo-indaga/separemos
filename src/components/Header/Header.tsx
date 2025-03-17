@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
+import RedesSociales from '@/components/RedesSociales/RedesSociales';
 
 interface HeaderMenu {
     id: number;
@@ -34,7 +34,7 @@ export default function Header() {
                         <div className="flex">
                             <button
                                 onClick={toggleMenu}
-                                className="bg-skyblue rounded-[50%] p-[5px]"
+                                className="bg-skyblue rounded-[50%] p-[5px] drop-shadow-md"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -97,41 +97,9 @@ export default function Header() {
                             ))}
                         </ul>
 
-                        <ul className="mt-[100px] flex flex-row">
-                            <li className="px-[4px] py-[2px]">
-                                <Link href="">
-                                    <Image
-                                        src={instagram}
-                                        alt="Instagram"
-                                        width={64}
-                                        height={64}
-                                        className="md:h-[38px] md:w-[38px]"
-                                    />
-                                </Link>
-                            </li>
-                            <li className="px-[4px] py-[2px]">
-                                <Link href="">
-                                    <Image
-                                        src={facebook}
-                                        alt="Facebook"
-                                        width={64}
-                                        height={64}
-                                        className="md:h-[38px] md:w-[38px]"
-                                    />
-                                </Link>
-                            </li>
-                            <li className="px-[4px] py-[2px]">
-                                <Link href="">
-                                    <Image
-                                        src={threads}
-                                        alt="Threads"
-                                        width={64}
-                                        height={64}
-                                        className="md:h-[38px] md:w-[38px]"
-                                    />
-                                </Link>
-                            </li>
-                        </ul>
+                        <div className="mt-[100px]">
+                            <RedesSociales />
+                        </div>
                     </div>
                 </div>
             </header>

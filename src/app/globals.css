@@ -42,3 +42,19 @@ body {
         @apply bg-purple/30 backdrop-blur-2xl fixed top-0 left-0 h-screen w-[100%] p-10 duration-500 ease-in-out
     }
 }
+
+.videoContainer {
+    position: relative;
+}
+
+.videoContainer iframe {
+    width: 610px;
+    height: 360px;
+}
+
+@media (max-width: 767px) {
+    .videoContainer iframe {
+        width: 360px;
+        height: 360px;
+    }
+}
