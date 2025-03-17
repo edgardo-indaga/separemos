@@ -20,7 +20,7 @@ export default function Home() {
 
     return (
         <>
-            <section className="h-[800px] xl:h-[100vh]" id="inicio">
+            <section className="h-[740px] xl:h-[100vh]" id="inicio">
                 <Image
                     alt="Background Inicio"
                     src={bgInicio}
@@ -43,7 +43,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="bg-skyblue px-[10px] pt-[100px] xl:px-[0px]" id="separemos">
+            <section
+                className="bg-skyblue px-[10px] pt-[130px] xl:px-[0px] xl:pt-[100px]"
+                id="separemos"
+            >
                 <div className="container mx-auto flex flex-col items-center justify-center">
                     <div className="xl:w-[890px]">
                         <h6 className="font-barlow text-center text-[24px] leading-[34px] text-white">
