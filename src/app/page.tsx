@@ -14,13 +14,13 @@ export default function Home() {
     const compost: string = '/item-compost.png';
     const mono: string = '/item-mono.png';
     const mundo: string = '/item-mundo.png';
-    const tapa: string = '/tapa-revista.webp';
+    const tapa: string = '/tapa-revista.jpg';
 
     const mobileTapa: string = '/item-tapa-monos.png';
 
     return (
         <>
-            <section className="h-[100vh]">
+            <section className="h-[100vh]" id="inicio">
                 <Image
                     alt="Background Inicio"
                     src={bgInicio}
@@ -43,7 +43,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="bg-skyblue px-[10px] pt-[100px] xl:px-[0px]">
+            <section className="bg-skyblue px-[10px] pt-[100px] xl:px-[0px]" id="separemos">
                 <div className="container mx-auto flex flex-col items-center justify-center">
                     <div className="xl:w-[890px]">
                         <h6 className="font-barlow text-center text-[24px] leading-[34px] text-white">
@@ -134,7 +134,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="bg-white py-[70px] xl:py-[100px]">
+            <section className="bg-white py-[70px] xl:py-[100px]" id="capsulas">
                 <div className="container mx-auto mb-[40px] flex flex-col items-center justify-center xl:mb-[100px]">
                     <h6 className="font-barlow text-denimblue text-center text-[24px] leading-[34px] font-bold">
                         CÁPSULAS EDUCATIVAS
@@ -170,7 +170,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="bg-skyblue px-[10px] py-[70px] xl:px-[0px] xl:py-[100px]">
+            <section
+                className="bg-skyblue px-[10px] py-[70px] xl:px-[0px] xl:py-[100px]"
+                id="revista"
+            >
                 <div className="container mx-auto mb-[40px] flex flex-col items-center justify-center xl:mb-[60px]">
                     <h6 className="font-barlow text-yellow text-center text-[24px] leading-[34px] font-bold">
                         REVISTA SEPAREMOS LAS AGUAS

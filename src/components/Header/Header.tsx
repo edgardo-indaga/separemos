@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import RedesSociales from '@/components/RedesSociales/RedesSociales';
 
@@ -14,15 +15,28 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
-    const instagram = '/icon-instagram.svg';
-    const facebook = '/icon-facebook.svg';
-    const threads = '/icon-threads.svg';
+    const logo: string = '/logo-principal.svg';
 
     const items: HeaderMenu[] = [
         {
             id: 1,
             name: 'Inicio',
             link: '/',
+        },
+        {
+            id: 2,
+            name: 'Separemos las aguas',
+            link: '/#separemos',
+        },
+        {
+            id: 3,
+            name: 'Capsulas Educativas',
+            link: '/#capsulas',
+        },
+        {
+            id: 4,
+            name: 'Revista Educativa',
+            link: '/#revista',
         },
     ];
 
@@ -83,6 +97,13 @@ export default function Header() {
                         </button>
                     </div>
                     <div className="flex flex-col items-center py-4 pt-15">
+                        <Image
+                            src={logo}
+                            alt="Logo"
+                            width={640}
+                            height={280}
+                            className="mb-[50px] w-[280px] xl:w-[400px]"
+                        />
                         <ul className="flex flex-col items-center">
                             {items.map((item) => (
                                 <li
@@ -90,7 +111,10 @@ export default function Header() {
                                     className="my-[13px]"
                                     onClick={() => setMenuOpen(false)}
                                 >
-                                    <Link href={item.link} className="linksMobile">
+                                    <Link
+                                        href={item.link}
+                                        className="font-barlow text-skyblue hover:text-denimblue text-[20px] font-medium uppercase hover:underline"
+                                    >
                                         {item.name}
                                     </Link>
                                 </li>
