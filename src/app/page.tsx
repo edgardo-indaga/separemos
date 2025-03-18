@@ -6,7 +6,8 @@ import DownloadMagazine from '@/components/DownloadMagazine/DownloadMagazine';
 export default function Home() {
     const logo: string = '/logo-principal.svg';
     const bgInicio: string = '/bg-inicio.jpg';
-    const items01: string = '/items-01.png';
+    const items02: string = '/item-02.png';
+    const items03: string = '/item-03.png';
     const itemPopo: string = '/item-popo.png';
     const itemClick: string = '/item-click.png';
     const itemTapa: string = '/item-tapa.png';
@@ -17,6 +18,8 @@ export default function Home() {
     const tapa: string = '/tapa-revista.jpg';
 
     const mobileTapa: string = '/item-tapa-monos.png';
+    const monoMobile: string = '/item-mono-mobile.png';
+    const cartonMobile: string = '/item-carton-mobile.png';
 
     return (
         <>
@@ -50,13 +53,22 @@ export default function Home() {
                             calles y se escurre bajo tierra.
                         </h6>
                     </div>
-                    <Image
-                        alt="Items 01"
-                        src={items01}
-                        width={1090}
-                        height={800}
-                        className="z-10 mt-[30px] xl:h-[661px] xl:w-[900px]"
-                    />
+                    <div className="mt-[30px] flex">
+                        <Image
+                            alt="Items 01"
+                            src={items02}
+                            width={1905}
+                            height={2781}
+                            className="mt-[30px] w-[160px] xl:w-[450px]"
+                        />
+                        <Image
+                            alt="Items 01"
+                            src={items03}
+                            width={2417}
+                            height={2781}
+                            className="mt-[30px] w-[180px] xl:w-[500px]"
+                        />
+                    </div>
                 </div>
             </section>
 
@@ -99,7 +111,7 @@ export default function Home() {
             </section>
 
             <section className="bg-yellow px-[10px] pt-[70px] xl:px-[0px] xl:pt-[100px]">
-                <div className="container mx-auto grid grid-cols-2 items-end justify-center xl:flex">
+                <div className="container mx-auto grid grid-cols-2 items-center justify-center xl:flex xl:items-end">
                     <Image
                         src={compost}
                         alt="Item Compost"
@@ -112,14 +124,28 @@ export default function Home() {
                         alt="Item Mono"
                         width={518}
                         height={566}
-                        className="xl:ml-[-80px] xl:w-[300px]"
+                        className="hidden xl:ml-[-80px] xl:block xl:w-[300px]"
+                    />
+                    <Image
+                        src={monoMobile}
+                        alt="Item Mono"
+                        width={300}
+                        height={518}
+                        className="w-[140px] xl:hidden"
                     />
                     <Image
                         src={carton}
                         alt="Item Carton"
                         width={466}
                         height={660}
-                        className="xl:ml-[-20px] xl:w-[280px]"
+                        className="hidden xl:ml-[-20px] xl:block xl:w-[280px]"
+                    />
+                    <Image
+                        src={cartonMobile}
+                        alt="Item Carton"
+                        width={575}
+                        height={485}
+                        className="xl:hidden"
                     />
                     <Image
                         src={mundo}
