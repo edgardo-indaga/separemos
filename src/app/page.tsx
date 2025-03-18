@@ -15,6 +15,7 @@ export default function Home() {
     const mono: string = '/item-mono.png';
     const mundo: string = '/item-mundo.png';
     const tapa: string = '/tapa-revista.jpg';
+
     const mobileTapa: string = '/item-tapa-monos.png';
 
     return (
