@@ -74,7 +74,13 @@ export default function Home() {
             <section className="bg-purple pt-[100px]">
                 <div className="container mx-auto items-end justify-center xl:grid xl:grid-cols-8">
                     <div className="hidden xl:col-span-2 xl:block">
-                        <Image src={itemPopo} alt="Item Popo" width={546} height={545} />
+                        <Image
+                            src={itemPopo}
+                            alt="Item Popo"
+                            width={546}
+                            height={545}
+                            className="float-end xl:w-[340px]"
+                        />
                     </div>
                     <div className="flex flex-col items-center justify-center px-[10px] xl:col-span-4 xl:px-[0px]">
                         <h6 className="font-barlow text-center text-[24px] leading-[34px] text-white">
@@ -101,9 +107,9 @@ export default function Home() {
                         <Image
                             src={itemClick}
                             alt="Item Click"
-                            width={610}
-                            height={605}
-                            className="xl:h-[400px] xl:w-[403px]"
+                            width={2480}
+                            height={2453}
+                            className="xl:w-[350px]"
                         />
                     </div>
                 </div>
@@ -151,7 +157,7 @@ export default function Home() {
                         alt="Item Mundo"
                         width={575}
                         height={485}
-                        className="xl:ml-[-40px] xl:w-[360px]"
+                        className="xl:mb-[-25px] xl:ml-[-40px] xl:w-[360px]"
                     />
                 </div>
             </section>
