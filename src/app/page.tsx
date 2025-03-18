@@ -167,7 +167,7 @@ export default function Home() {
                         number="1"
                         title="Requetepotoble"
                         description="Cuando los Guardianes encaran a Lulo porque no sabe de dónde viene el agua que sale de la llave, se dan cuenta de que ellos tampoco conocen la respuesta."
-                        idVideo="c_o7XZqJ5T8"
+                        idVideo="YYa3dXILdis"
                     />
 
                     <Capsulas
@@ -175,16 +175,16 @@ export default function Home() {
                         title="Los misterios del desagüe"
                         description="Una voz misteriosa invita a los Guardianes a conocer dónde llega el agua usada cuando se la traga el desagüe."
                         descriptionBold="¿Te atreves a acompañarlos en este oloroso recorrido?"
-                        idVideo="c_o7XZqJ5T8"
+                        idVideo="PrYNT8lG6x8"
                     />
 
-                    <Capsulas
+                    {/*<Capsulas
                         number="3"
                         title="Arrastrados por la lluvia"
                         description="Lulo y Mascarilla van camino a conocer a la familia de Lulo cuando un río de agua lluvia, mezclada con aguas servidas, los arrastra por la alcantarilla."
                         descriptionBold="¿Quieres saber dónde irán a parar?"
                         idVideo="c_o7XZqJ5T8"
-                    />
+                    />*/}
                 </div>
 
                 <div className="xl:mt-[80px]">
