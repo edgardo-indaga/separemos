@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import RedesSociales from '@/components/RedesSociales/RedesSociales';
 
 interface HeaderMenu {
     id: number;
@@ -120,10 +119,6 @@ export default function Header() {
                                 </li>
                             ))}
                         </ul>
-
-                        <div className="mt-[100px]">
-                            <RedesSociales />
-                        </div>
                     </div>
                 </div>
             </header>
