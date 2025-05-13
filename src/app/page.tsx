@@ -184,13 +184,13 @@ export default function Home() {
                         idVideo="PrYNT8lG6x8"
                     />
 
-                    {/*<Capsulas
+                    <Capsulas
                         number="3"
                         title="Arrastrados por la lluvia"
-                        description="Lulo y Mascarilla van camino a conocer a la familia de Lulo cuando un río de agua lluvia, mezclada con aguas servidas, los arrastra por la alcantarilla."
+                        description="Durante una lluvia, Lulo y Mascarilla son arrastrados al alcantarillado y descubren los riesgos de mezclar aguas lluvias y servidas. Un trabajador les enseña por qué es clave separarlas y cuidar el sistema."
                         descriptionBold="¿Quieres saber dónde irán a parar?"
-                        idVideo="c_o7XZqJ5T8"
-                    />*/}
+                        idVideo="vurzX4O2ZXY"
+                    />
                 </div>
 
                 <div className="xl:mt-[80px]">
